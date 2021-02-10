@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Validation Practice</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/6fb8d24e2d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <h1 class="title">FORM VALIDATION PRACTICE</h1>
+  <div class="main-container">
+    <div class="form-container">
+      <div class="input-cont">
+        <label for="email">E-mail</label>
+        <input class="text-input" type="email" name="email" id="email">
+        <i class="fas fa-check"></i>
+        <i class="fas fa-exclamation"></i>
+        <p class="error-text" id="not-valid">Not a valid e-mail</p>
+        <p class="error-text" id="error">Enter your e-mail please</p>
+      </div>
+      <div class="input-cont">
+        <label for="country">Country</label>
+        <input class="text-input" type="text" name="country" id="country">
+        <i class="fas fa-check"></i>
+        <i class="fas fa-exclamation"></i>
+        <p class="error-text" id="error">Enter your country name please</p>
+        <p class="error-text" id="not-valid">No special characters please</p>
+      </div>
+      <div class="input-cont">
+        <label for="code">ZIP code</label>
+        <input class="text-input" type="text" name="code" id="code">
+        <i class="fas fa-check"></i>
+        <i class="fas fa-exclamation"></i>
+        <p class="error-text" id="error">Enter your ZIP code please</p>
+        <p class="error-text" id="not-valid">Enter only numbers please</p>
+      </div>
+      <div class="input-cont">
+        <label for="password">Password</label>
+        <input type="password" class="text-input" name="password" id="password">
+        <i class="fas fa-check"></i>
+        <i class="fas fa-exclamation"></i>
+        <p class="error-text" id="error">Enter a password please</p>
+        <p class="error-text" id="too-short">Password too short</p>
+        <p class="error-text" id="too-long">Password too long</p>
+      </div>
+      <div class="input-cont">
+        <label for="pass-confirm">Password confirmation</label>
+        <input type="password" class="text-input" name="pass-confirm" id="pass-confirm">
+        <i class="fas fa-check"></i>
+        <i class="fas fa-exclamation"></i>
+        <p class="error-text" id="error">Enter a confirmation password please</p>
+        <p class="error-text" id="not-valid">Passwords are different</p>
+      </div>
+    </div>
+    <button type="submit" id="submit">Submit</button>
+  </div>
+</body>
+
+<script src="index.js"></script>
+
+</html>
